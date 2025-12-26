@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>将棋戦績</title></head>
+<body>
+    <h2>将棋戦績一覧</h2>
+    <a href="/shogi/create">新規登録</a>
+    <table border="1">
+        <tr><th>ID</th><th>日付</th><th>相手</th><th>結果</th><th>戦型</th><th>操作</th></tr>
+        <% let i = 0; %>
+        <% for(let row of data) { %>
+        <tr>
+            <td><%= row.id %></td>
+            <td><%= row.date %></td>
+            <td><%= row.opponent %></td>
+            <td><%= row.result %></td>
+            <td><%= row.strategy %></td>
+            <td>
+                <a href="/shogi/<%= i %>">詳細</a> | 
+                <a href="/shogi/edit/<%= i %>">編集</a> | 
+                <a href="/shogi/delete/<%= i %>">削除</a>
+            </td>
+        </tr>
+        <% i++; } %>
+    </table>
+    <br><a href="/">Topへ</a>
+</body>
+</html>

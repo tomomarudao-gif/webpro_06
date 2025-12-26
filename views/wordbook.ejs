@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>単語帳</title></head>
+<body>
+    <h2>単語一覧</h2>
+    <a href="/wordbook/create">新規登録</a>
+    <table border="1">
+        <tr><th>ID</th><th>単語</th><th>意味</th><th>操作</th></tr>
+        <% let i = 0; %>
+        <% for(let row of data) { %>
+        <tr>
+            <td><%= row.id %></td><td><%= row.word %></td><td><%= row.meaning %></td>
+            <td>
+                <a href="/wordbook/<%= i %>">詳細</a> | 
+                <a href="/wordbook/edit/<%= i %>">編集</a> | 
+                <a href="/wordbook/delete/<%= i %>">削除</a>
+            </td>
+        </tr>
+        <% i++; } %>
+    </table>
+    <br><a href="/">Topへ</a>
+</body>
+</html>

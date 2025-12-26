@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>編集</title></head>
+<body>
+    <h2>編集</h2>
+    <form action="/shogi/update/<%= number %>" method="POST">
+        ID: <%= data.id %><br>
+        日付: <input type="date" name="date" value="<%= data.date %>"><br>
+        相手: <input type="text" name="opponent" value="<%= data.opponent %>"><br>
+        結果: <input type="text" name="result" value="<%= data.result %>"><br>
+        戦型: <input type="text" name="strategy" value="<%= data.strategy %>"><br>
+        <input type="submit" value="更新">
+    </form>
+    <a href="/shogi">戻る</a>
+</body>
+</html>

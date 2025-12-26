@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>新規登録</title></head>
+<body>
+    <h2>新規登録</h2>
+    <form action="/shogi/create" method="POST">
+        日付: <input type="date" name="date" required><br>
+        相手: <input type="text" name="opponent" required><br>
+        結果: <input type="text" name="result" required><br>
+        戦型: <input type="text" name="strategy"><br>
+        <input type="submit" value="登録">
+    </form>
+    <a href="/shogi">戻る</a>
+</body>
+</html>

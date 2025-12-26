@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>詳細</title></head>
+<body>
+    <h2>戦績詳細</h2>
+    <p>ID: <%= data.id %></p>
+    <p>日付: <%= data.date %></p>
+    <p>相手: <%= data.opponent %></p>
+    <p>結果: <%= data.result %></p>
+    <p>戦型: <%= data.strategy %></p>
+    <a href="/shogi/edit/<%= number %>">編集する</a><br>
+    <a href="/shogi">一覧に戻る</a>
+</body>
+</html>

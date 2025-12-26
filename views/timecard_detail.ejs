@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>詳細</title></head>
+<body>
+    <h2>勤務詳細</h2>
+    <p>ID: <%= data.id %></p>
+    <p>日付: <%= data.date %></p>
+    <p>開始: <%= data.start %></p>
+    <p>終了: <%= data.end %></p>
+    <p>備考: <%= data.note %></p>
+    <a href="/timecard/edit/<%= number %>">編集する</a><br>
+    <a href="/timecard">戻る</a>
+</body>
+</html>

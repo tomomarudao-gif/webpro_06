@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"><title>詳細</title></head>
+<body>
+    <h2>単語詳細</h2>
+    <p>ID: <%= data.id %></p>
+    <p>単語: <%= data.word %></p>
+    <p>意味: <%= data.meaning %></p>
+    <p>例文: <%= data.example %></p>
+    <a href="/wordbook/edit/<%= number %>">編集する</a><br>
+    <a href="/wordbook">戻る</a>
+</body>
+</html>
